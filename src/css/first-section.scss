@@ -1,0 +1,151 @@
+.first__section {
+	width: 100%;
+	height: 800px;
+	margin-top: -600px;
+	background: transparent;
+	// z-index: 1;
+}
+
+.advantages__section {
+	width: 100%;
+	height: auto;
+	position: relative;
+	z-index: 2;
+}
+
+.advantages__section:before {
+	content: "";
+	width: 700px;
+	height: 700px;
+	position: absolute;
+	left: -150px;
+	top: 0;
+	background-image: 
+		url("../img/elipse.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	opacity: 0.6;
+}
+
+.advantages__section:after {
+	content: "";
+	width: 700px;
+	height: 700px;
+	position: absolute;
+	left: -150px;
+	top: 0;
+	background-image: 
+		url("../img/branch.png");
+	background-repeat: no-repeat;
+	background-size: 400px;
+	background-position: center bottom;
+}
+
+.avantages__wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+
+}
+
+.advantages__title {
+	width: 810px;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 51px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+	margin: auto;
+	margin-bottom: 95px;
+}
+
+.advantage__block {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.advantage__boots {
+	width: 589px;
+	height: 580px;
+	background-image: url("../img/adv-circle.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	img {
+		position: absolute;
+	}
+}
+
+.advantage__boot-1 {
+	width: 550px;
+	top: -50px;
+	left: -20px;
+}
+
+.advantage__boot-2 {
+	width: 570px;
+	bottom: 0;
+	left: -200px;
+}
+
+.advantages {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+.advantage {
+	width: 424px;
+	height: 150px;
+	display: flex;
+	justify-content: space-between;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 4px rgba(183, 30, 0, 0.2);
+	border-radius: 10px;
+	margin-left: 30px;
+	// margin-bottom: 50px;
+	position: relative;
+}
+
+.advantage:before {
+	content: "";
+	position: absolute;
+	left: -4px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 8px;
+	height: 123px;
+	background: #9F004D;
+	border-radius: 4px;
+}
+
+.advantage__1,
+.advantage__3 {
+	margin-left: 0;
+}
+
+.advantage__text {
+	padding: 23px 30px;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 21px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.advantage__img {
+	width: 150px;
+	height: 150px;
+	border-radius: 10px;
+}
