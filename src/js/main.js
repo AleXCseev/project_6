@@ -5,6 +5,24 @@ $(function () {
 		loop: true,
 	});
 
+	$("body").on('click', '[href*="#"]', function (e) {
+		var fixedOffset = 0;
+		if ($(document).width() <= 600) {
+			fixedOffset = 200;
+		}
+		if ($(document).width() <= 440) {
+			fixedOffset = 300;
+		}
+		if ($(document).width() <= 320) {
+			fixedOffset = 400;
+		}
+		$('html,body')
+			.stop()
+			.animate({ scrollTop: $(this.hash).offset().top + fixedOffset }, 1000);
+		e.preventDefault();
+	});
+
+
 	if (!String.prototype.padStart) {
 		String.prototype.padStart = function padStart(targetLength, padString) {
 			targetLength = targetLength >> 0; //truncate if number or convert non-number to 0;
@@ -39,9 +57,80 @@ $(function () {
 
 	timer()
 
-	$(".reviews").slick({
-		infinite: true,
-  		slidesToShow: 3,
-  		slidesToScroll: 1
-	});
+	function initSliders() {
+		$(".reviews").slick({
+			infinite: true,
+			  slidesToShow: 3,
+			  slidesToScroll: 1,
+			arrows: true,
+			prevArrow: $('.btn__prev'),
+			nextArrow: $('.btn__next'),
+		});
+
+		if($(document).width() <= 414) {
+			$(".galary__wrapper").slick({
+				infinite: true,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: true,
+				appendArrows: $(".galary__wrapper"),
+				prevArrow: '<button type="button" class="galary__btn galary__btn-next"><img src="./img/arrow.png" alt="стрелка" class="btn__img-next"></button>',
+				nextArrow: '<button type="button" class="galary__btn galary__btn-prev"><img src="./img/arrow.png" alt="стрелка" class="btn__img-prev"></button>',
+			});
+		}
+	}
+	initSliders()
+	
+
+	function switchBtns(selector) {
+		$(selector + " .size__btn").click(function () {
+			$(selector + " .size__btn-block").removeClass("active");
+			$(this).parent().addClass("active");
+		})
+	}
+
+	switchBtns(".card__1");
+	switchBtns(".card__2");
+	switchBtns(".card__3");
+
+	function switchColor(selector) {
+		$(selector).click(function () {
+			$(selector).removeClass("active");
+			$(this).addClass("active");
+		})
+	}
+
+	switchColor(".card__1 .card__color-btn")
+	switchColor(".card__2 .card__color-btn")
+
+	function galary(selector) {
+		var galaryFototsSelector = selector + " .card__galary-img";
+
+		function toggleDataSrcAtribute(string) {
+			$(selector + " .card__boot")
+				.hide()
+				.attr("src", $(selector + " .card__boot").attr("data-" + string))
+				.fadeIn(1000);
+			$(galaryFototsSelector).each(function () {
+				$(this)
+					.hide()
+					.attr("src", $(this).attr("data-" + string))
+					.fadeIn(1000)
+				$(this).parent().attr("href", $(this).attr("data-" + string));
+			})
+		}
+
+		$(selector + " .card__color-btn").click(function () {
+			if ($(this).hasClass("btn-white")) {
+				toggleDataSrcAtribute("white");
+			} 
+			if ($(this).hasClass("btn-black")) {
+				toggleDataSrcAtribute("black");
+			}
+		})
+	}
+
+	galary(".card__1")
+	galary(".card__2")
+
 })

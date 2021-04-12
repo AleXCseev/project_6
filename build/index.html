@@ -73,8 +73,8 @@
 							ECCO FLUIDFORM</h3>
 						<div class="advantage__block">
 							<div class="advantage__boots">
-								<img src="./img/adv-boot1.png" alt="обувь" class="advantage__boot-1">
-								<img src="./img/adv-boot2.png" alt="обувь" class="advantage__boot-2">
+								<img src="./img/adv-boot1.png" alt="обувь" class="advantage__boot-1 advantages__animate">
+								<img src="./img/adv-boot2.png" alt="обувь" class="advantage__boot-2 advantages__animate">
 							</div>
 							<div class="advantages">
 								<div class="advantage advantage__1">
@@ -97,39 +97,35 @@
 			<div class="galary__section">
 				<div class="container">
 					<div class="galary__wrapper">
-						<div class="galary__row">
-							<div class="galary__item galary__item-big">
-								<a data-fancybox="gallery" href="./img/galary/1.jpg">
-									<img src="./img/galary/1.jpg" alt="фото" class="galary__foto">
-								</a>
-							</div>
-							<div class="galary__item">
-								<a data-fancybox="gallery" href="./img/galary/2.jpg">
-									<img src="./img/galary/2.jpg" alt="фото" class="galary__foto">
-								</a>
-							</div>
-							<div class="galary__item">
-								<a data-fancybox="gallery" href="./img/galary/3.jpg">
-									<img src="./img/galary/3.jpg" alt="фото" class="galary__foto">
-								</a>
-							</div>
+						<div class="galary__item item__1 galary__item-big">
+							<a data-fancybox="gallery" href="./img/galary/1.jpg">
+								<img src="./img/galary/1.jpg" alt="фото" class="galary__foto">
+							</a>
 						</div>
-						<div class="galary__row galary__row-bottom">
-							<div class="galary__item">
-								<a data-fancybox="gallery" href="./img/galary/4.jpg">
-									<img src="./img/galary/4.jpg" alt="фото" class="galary__foto">
-								</a>
-							</div>
-							<div class="galary__item">
-								<a data-fancybox="gallery" href="./img/galary/5.jpg">
-									<img src="./img/galary/5.jpg" alt="фото" class="galary__foto">
-								</a>
-							</div>
-							<div class="galary__item galary__item-big">
-								<a data-fancybox="gallery" href="./img/galary/6.jpg">
-									<img src="./img/galary/6.jpg" alt="фото" class="galary__foto">
-								</a>
-							</div>
+						<div class="galary__item item__2">
+							<a data-fancybox="gallery" href="./img/galary/2.jpg">
+								<img src="./img/galary/2.jpg" alt="фото" class="galary__foto">
+							</a>
+						</div>
+						<div class="galary__item item__3">
+							<a data-fancybox="gallery" href="./img/galary/3.jpg">
+								<img src="./img/galary/3.jpg" alt="фото" class="galary__foto">
+							</a>
+						</div>
+						<div class="galary__item item__4">
+							<a data-fancybox="gallery" href="./img/galary/4.jpg">
+								<img src="./img/galary/4.jpg" alt="фото" class="galary__foto">
+							</a>
+						</div>
+						<div class="galary__item item__5">
+							<a data-fancybox="gallery" href="./img/galary/5.jpg">
+								<img src="./img/galary/5.jpg" alt="фото" class="galary__foto">
+							</a>
+						</div>
+						<div class="galary__item item__6 galary__item-big">
+							<a data-fancybox="gallery" href="./img/galary/6.jpg">
+								<img src="./img/galary/6.jpg" alt="фото" class="galary__foto">
+							</a>
 						</div>
 					</div>
 				</div>
@@ -176,7 +172,7 @@
 		<div class="second__section">
 			<div class="card__section">
 				<div class="container">
-					<div class="card card__1">
+					<div class="card card__1" id="card">
 						<div class="card__left">
 							<h3 class="card__title">
 								ECCO 
@@ -212,10 +208,10 @@
 						</div>
 						<div class="card__center">
 							<img 
-								data-whit="./img/card1-white.png"
+								data-white="./img/card1-white.png"
 								data-black="./img/card1-black.png"
 								src="./img/card1-black.png" 
-								alt="" 
+								alt="обувь" 
 								class="card__boot"
 							>
 							<div class="card__color">
@@ -488,7 +484,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="card card__2">
+					<div class="card card__3">
 						<div class="card__left">
 							<h3 class="card__title">
 								ECCO 
@@ -633,110 +629,151 @@
 				</div>
 			</div>
 		</div>
-		<fotter class="site__footer">
+		<footer class="site__footer">
 			<div class="review__section">
+				<img src="./img/footer-boot1.png" alt="обувь" class="review__btn-1">
+				<img src="./img/header-boot2.png" alt="обувь" class="review__btn-2">
 				<div class="container">
-					<div class="reviews">
-						<div class="review">
-							<div class="review__autor">
-								<div class="autor__foto">
-									<img src="./img/reviews/1.jpg" alt="фото" class="autor__foto-img">
+					<div class="reviews__wrapper">
+						<div class="reviews">
+							<div class="review">
+								<div class="review__autor">
+									<div class="autor__foto">
+										<img src="./img/reviews/1.jpg" alt="фото" class="autor__foto-img">
+									</div>
+									<p class="autor__name">Анна Дмитрук</p>
 								</div>
-								<p class="autor__name">Анна Дмитрук</p>
+								<div class="review__message">
+									<p class="message__text">
+										Очень удобные практичные сандалии. Можно носить, как в офис, так и по улице. Даже черный цвет не привлекает солнце на себя.
+									</p>
+									<p class="message__text">
+										Очень удобные практичные сандалии. Можно носить, как в офис, так и по улице. Даже черный цвет не привлекает солнце на себя.
+									</p>
+								</div>
 							</div>
-							<div class="review__message">
-								<p class="message__text">
-									Очень удобные практичные сандалии. Можно носить, как в офис, так и по улице. Даже черный цвет не привлекает солнце на себя.
-								</p>
-								<p class="message__text">
-									Очень удобные практичные сандалии. Можно носить, как в офис, так и по улице. Даже черный цвет не привлекает солнце на себя.
-								</p>
+							<div class="review">
+								<div class="review__autor">
+									<div class="autor__foto">
+										<img src="./img/reviews/1.jpg" alt="фото" class="autor__foto-img">
+									</div>
+									<p class="autor__name">Анна Дмитрук</p>
+								</div>
+								<div class="review__message">
+									<p class="message__text">
+										Очень удобные практичные сандалии. Можно носить, как в офис, так и по улице. Даже черный цвет не привлекает солнце на себя.
+									</p>
+									<p class="message__text">
+										Очень удобные практичные сандалии. Можно носить, как в офис, так и по улице. Даже черный цвет не привлекает солнце на себя.
+									</p>
+								</div>
+							</div>
+							<div class="review">
+								<div class="review__autor">
+									<div class="autor__foto">
+										<img src="./img/reviews/1.jpg" alt="фото" class="autor__foto-img">
+									</div>
+									<p class="autor__name">Анна Дмитрук</p>
+								</div>
+								<div class="review__message">
+									<p class="message__text">
+										Очень удобные практичные сандалии. Можно носить, как в офис, так и по улице. Даже черный цвет не привлекает солнце на себя.
+									</p>
+									<p class="message__text">
+										Очень удобные практичные сандалии. Можно носить, как в офис, так и по улице. Даже черный цвет не привлекает солнце на себя.
+									</p>
+								</div>
+							</div>
+							<div class="review">
+								<div class="review__autor">
+									<div class="autor__foto">
+										<img src="./img/reviews/1.jpg" alt="фото" class="autor__foto-img">
+									</div>
+									<p class="autor__name">Анна Дмитрук</p>
+								</div>
+								<div class="review__message">
+									<p class="message__text">
+										Очень удобные практичные сандалии. Можно носить, как в офис, так и по улице. Даже черный цвет не привлекает солнце на себя.
+									</p>
+									<p class="message__text">
+										Очень удобные практичные сандалии. Можно носить, как в офис, так и по улице. Даже черный цвет не привлекает солнце на себя.
+									</p>
+								</div>
+							</div>
+							<div class="review">
+								<div class="review__autor">
+									<div class="autor__foto">
+										<img src="./img/reviews/1.jpg" alt="фото" class="autor__foto-img">
+									</div>
+									<p class="autor__name">Анна Дмитрук</p>
+								</div>
+								<div class="review__message">
+									<p class="message__text">
+										Очень удобные практичные сандалии. Можно носить, как в офис, так и по улице. Даже черный цвет не привлекает солнце на себя.
+									</p>
+									<p class="message__text">
+										Очень удобные практичные сандалии. Можно носить, как в офис, так и по улице. Даже черный цвет не привлекает солнце на себя.
+									</p>
+								</div>
+							</div>
+							<div class="review">
+								<div class="review__autor">
+									<div class="autor__foto">
+										<img src="./img/reviews/1.jpg" alt="фото" class="autor__foto-img">
+									</div>
+									<p class="autor__name">Анна Дмитрук</p>
+								</div>
+								<div class="review__message">
+									<p class="message__text">
+										Очень удобные практичные сандалии. Можно носить, как в офис, так и по улице. Даже черный цвет не привлекает солнце на себя.
+									</p>
+									<p class="message__text">
+										Очень удобные практичные сандалии. Можно носить, как в офис, так и по улице. Даже черный цвет не привлекает солнце на себя.
+									</p>
+								</div>
 							</div>
 						</div>
-						<div class="review">
-							<div class="review__autor">
-								<div class="autor__foto">
-									<img src="./img/reviews/1.jpg" alt="фото" class="autor__foto-img">
-								</div>
-								<p class="autor__name">Анна Дмитрук</p>
-							</div>
-							<div class="review__message">
-								<p class="message__text">
-									Очень удобные практичные сандалии. Можно носить, как в офис, так и по улице. Даже черный цвет не привлекает солнце на себя.
-								</p>
-								<p class="message__text">
-									Очень удобные практичные сандалии. Можно носить, как в офис, так и по улице. Даже черный цвет не привлекает солнце на себя.
-								</p>
-							</div>
-						</div>
-						<div class="review">
-							<div class="review__autor">
-								<div class="autor__foto">
-									<img src="./img/reviews/1.jpg" alt="фото" class="autor__foto-img">
-								</div>
-								<p class="autor__name">Анна Дмитрук</p>
-							</div>
-							<div class="review__message">
-								<p class="message__text">
-									Очень удобные практичные сандалии. Можно носить, как в офис, так и по улице. Даже черный цвет не привлекает солнце на себя.
-								</p>
-								<p class="message__text">
-									Очень удобные практичные сандалии. Можно носить, как в офис, так и по улице. Даже черный цвет не привлекает солнце на себя.
-								</p>
-							</div>
-						</div>
-						<div class="review">
-							<div class="review__autor">
-								<div class="autor__foto">
-									<img src="./img/reviews/1.jpg" alt="фото" class="autor__foto-img">
-								</div>
-								<p class="autor__name">Анна Дмитрук</p>
-							</div>
-							<div class="review__message">
-								<p class="message__text">
-									Очень удобные практичные сандалии. Можно носить, как в офис, так и по улице. Даже черный цвет не привлекает солнце на себя.
-								</p>
-								<p class="message__text">
-									Очень удобные практичные сандалии. Можно носить, как в офис, так и по улице. Даже черный цвет не привлекает солнце на себя.
-								</p>
-							</div>
-						</div>
-						<div class="review">
-							<div class="review__autor">
-								<div class="autor__foto">
-									<img src="./img/reviews/1.jpg" alt="фото" class="autor__foto-img">
-								</div>
-								<p class="autor__name">Анна Дмитрук</p>
-							</div>
-							<div class="review__message">
-								<p class="message__text">
-									Очень удобные практичные сандалии. Можно носить, как в офис, так и по улице. Даже черный цвет не привлекает солнце на себя.
-								</p>
-								<p class="message__text">
-									Очень удобные практичные сандалии. Можно носить, как в офис, так и по улице. Даже черный цвет не привлекает солнце на себя.
-								</p>
-							</div>
-						</div>
-						<div class="review">
-							<div class="review__autor">
-								<div class="autor__foto">
-									<img src="./img/reviews/1.jpg" alt="фото" class="autor__foto-img">
-								</div>
-								<p class="autor__name">Анна Дмитрук</p>
-							</div>
-							<div class="review__message">
-								<p class="message__text">
-									Очень удобные практичные сандалии. Можно носить, как в офис, так и по улице. Даже черный цвет не привлекает солнце на себя.
-								</p>
-								<p class="message__text">
-									Очень удобные практичные сандалии. Можно носить, как в офис, так и по улице. Даже черный цвет не привлекает солнце на себя.
-								</p>
-							</div>
-						</div>
+						<div class="review__btns">
+							<button type="button" class="review__btn btn__next">
+								<img src="./img/arrow.png" alt="стрелка" class="btn__img-next">
+							</button>
+							<button type="button" class="review__btn btn__prev">
+								<img src="./img/arrow.png" alt="стрелка" class="btn__img-prev">
+							</button>
+						</div>	
 					</div>
 				</div>
 			</div>
-		</fotter>
+			<div class="container">
+				<div class="footer__content">
+					<img src="./img/header-boot1.png" alt="обувь" class="footer__boot-1">
+					<img src="./img/header-boot2.png" alt="обувь" class="footer__boot-2">
+					<img src="./img/footer-girl.png" alt="девушка" class="footer__girl">
+					<div class="sale">
+						<p class="sale__number"> - 65%</p>
+						<p class="sale__text">Sale</p>
+					</div>
+					<div class="footer__title-wrapper">
+						<div class="footer__title-block">
+							<h1 class="footer__title">ECCO DAMARA black</h1>
+						</div>
+					</div>
+					<div class="footer__subtitle-wrapper">
+						<div class="footer__subtitle-block">
+							<h1 class="footer__subtitle">Лучшая цена</h1>
+						</div>
+					</div>
+					<div class="footer__price">
+						<div class="price">
+							<span class="old__price">1000 грн</span>
+							<span class="new__price">1000 грн</span>
+						</div>
+						<a href="#card" class="header__order-btn">заказать</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-dev">ТОВ "ShokSale" проспект Дмитрия Яворницкого, 50, Днепр, 49000 ЕГРПОУ 39729741 Разработка лендинга<a target="_blank" class="itcreative-link" href="https://itcreative.info"> itcreative.info</a></div>
+		</footer>
 	</div>
 
 	<script src="./libs/jquery.min.js"></script>

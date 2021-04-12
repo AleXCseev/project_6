@@ -12,18 +12,41 @@
 		left bottom,
 		right 50px bottom 250px;
 	margin-top: -150px;
+	position: relative;
 }
 
 .review__section {
 	width: 100%;
 	height: 400px;
 	margin-top: 50px;
+	position: relative;
+	margin-bottom: 400px;
+}
+
+.review__btn-1 {
+	position: absolute;
+	width: 500px;
+	right: 60px;
+	top: 50px;
+}
+
+.review__btn-2 {
+	position: absolute;
+	top: -300px;
+	right: -40px;
+	opacity: 0.8;
+	width: 320px;
+}
+
+.reviews__wrapper {
+	width: 940px;
+	height: 400px;
+	position: relative;
 }
 
 .reviews {
-	width: 940px;
-	height: 400px;
-	border: 1px solid black;
+	width: 100%;
+	height: 100%;
 	display: flex;
 }
 
@@ -87,3 +110,205 @@
 	text-align: center;
 	color: #000000;
 }
+
+.review__btns {
+	width: 190px;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	margin-top: -20px;
+	position: relative;
+	z-index: 1000;
+}
+
+.review__btn {
+	cursor: pointer;
+	outline: none;
+}
+
+.btn__img-prev {
+	transform: rotate(180deg);
+}
+
+.footer__content {
+	width: 730px;
+	height: auto;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	margin-left: 200px;
+	z-index: 100;
+	.sale {
+		right: auto;
+		left: -120px;
+		top: 300px;
+		z-index: 1;
+	}
+	.sale__text {
+		color: #000000;
+		opacity: 0.5;
+	}
+}
+
+.footer__boot-1 {
+	position: absolute;
+	top: -200px;
+	left: -270px;
+	z-index: 1;
+	width: 600px;
+}
+
+.footer__boot-2 {
+	position: absolute;
+	top: 140px;
+	left: 50px;
+	width: 320px;
+	z-index: 1;
+}
+
+.footer__girl {
+	position: absolute;
+	width: 950px;
+	top: -100px;
+	right: -550px;
+	z-index: -1;
+}
+.footer__title-wrapper {
+	width: 550px;
+	height: 56px;
+	position: relative;
+	margin-bottom: 25px;
+}
+
+.footer__title-wrapper:before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform: skew(20deg);
+	background: #3A8C1D;
+	box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+	bottom: -10px;
+	right: -10px;
+}
+
+.footer__title-block {
+	width: 550px;
+	height: 56px;
+	transform: skew(20deg);
+	background: #3A8C1D;
+	box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 42px;
+}
+
+.footer__title {
+	font-family: Arial;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 24px;
+	line-height: 34px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	transform: skew(-20deg);
+}
+
+.footer__subtitle-wrapper {
+	width: 700px;
+	height: 100px;
+	position: relative;
+	margin-bottom: 56px;
+}
+
+.footer__subtitle-wrapper:before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform: skew(20deg);
+	background: #144E00;
+	box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+	bottom: -10px;
+	right: -10px;
+}
+
+.footer__subtitle-block {
+	width: 700px;
+	height: 100px;
+	transform: skew(20deg);
+	background: #144E00;
+	box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 50px;
+}
+
+.footer__subtitle {
+	font-family: Arial;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 54px;
+	line-height: 76px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	transform: skew(-20deg);
+}
+
+.footer__price {
+	margin-left: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	.price {
+		margin-bottom: 20px;
+	}
+	.old__price {
+		color: #000000;
+		opacity: 0.5;
+	}
+	.old__price:before {
+		background-color: #9F004D;
+	}
+	.new__price {
+		color: #9F004D;
+	}
+	.header__order-btn {
+		background: #9F004D;
+		box-shadow: 0px 0px 20px #FFF72D;
+	}
+	.header__order-btn:hover {
+		background: radial-gradient(50% 50% at 50% 50%, #144E00 0%, #144E00 33.33%, #3C8E1E 100%);
+		box-shadow: 0px 0px 20px #FFF72D;
+	}
+}
+
+.footer-dev	{
+	width: 1140px;
+	position: absolute;
+	left: 50%;
+	bottom: 16px;
+	transform: translateX(-50%);
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 18px;
+	text-align: center;
+	color: #000000;
+	opacity: 0.5;
+}
+
+.itcreative-link {
+	color: #000000;
+	text-decoration: none;
+}
+
+
+
