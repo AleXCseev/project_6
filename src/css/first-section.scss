@@ -136,6 +136,9 @@
 }
 
 .advantage__text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	padding: 23px 30px;
 	font-family: Arial;
 	font-style: normal;
@@ -296,6 +299,7 @@
 	line-height: 56px;
 	color: #FFFFFF;
 	margin-bottom: 20px;
+	text-transform: uppercase;
 }
 
 .sprey__text {

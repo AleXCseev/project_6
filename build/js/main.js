@@ -7,14 +7,11 @@ $(function () {
 
 	$("body").on('click', '[href*="#"]', function (e) {
 		var fixedOffset = 0;
-		if ($(document).width() <= 600) {
-			fixedOffset = 200;
+		if ($(document).width() <= 1000) {
+			fixedOffset = 600;
 		}
-		if ($(document).width() <= 440) {
-			fixedOffset = 300;
-		}
-		if ($(document).width() <= 320) {
-			fixedOffset = 400;
+		if ($(document).width() <= 660) {
+			fixedOffset = -100;
 		}
 		$('html,body')
 			.stop()
@@ -60,11 +57,27 @@ $(function () {
 	function initSliders() {
 		$(".reviews").slick({
 			infinite: true,
-			  slidesToShow: 3,
-			  slidesToScroll: 1,
+			slidesToShow: 3,
+			slidesToScroll: 1,
 			arrows: true,
 			prevArrow: $('.btn__prev'),
 			nextArrow: $('.btn__next'),
+			responsive: [
+				{
+					breakpoint: 1000,
+					settings: {
+					  slidesToShow: 2,
+					  slidesToScroll: 1,
+					}
+				},
+				{
+					breakpoint: 740,
+					settings: {
+					  slidesToShow: 1,
+					  slidesToScroll: 1,
+					}
+				},
+			]
 		});
 
 		if($(document).width() <= 414) {

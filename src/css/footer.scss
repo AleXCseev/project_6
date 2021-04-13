@@ -4,8 +4,7 @@
 	background-image: 
 		url("../img/footer-circls.png"),
 		url("../img/footer-bamboo.png"),
-		url("../img/footer-elipse.png"),
-		url("../img/");
+		url("../img/footer-elipse.png");
 	background-repeat: no-repeat;
 	background-position: 
 		left 200px bottom,
@@ -13,6 +12,20 @@
 		right 50px bottom 250px;
 	margin-top: -150px;
 	position: relative;
+}
+
+.site__footer:before {
+	content: "";
+	position: absolute;
+	bottom: 100px;
+	right: 200px;
+	width: 1280px;
+	height: 900px;
+	background-image: url("../img/glare.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	z-index: 1;
+	opacity: 0.5;
 }
 
 .review__section {
@@ -93,11 +106,15 @@
 .review__message {
 	width: 280px;
 	height: 272px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	background-image: url("../img/review-bg.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 295px;
-	padding: 30px 10px;
+	padding: 30px 20px;
 	// opacity: 0.3;
 }
 
@@ -254,7 +271,7 @@
 	font-family: Arial;
 	font-style: normal;
 	font-weight: 900;
-	font-size: 54px;
+	font-size: 38px;
 	line-height: 76px;
 	text-transform: uppercase;
 	color: #FFFFFF;

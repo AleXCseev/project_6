@@ -62,8 +62,8 @@
 	font-family: Arial;
 	font-style: normal;
 	font-weight: 900;
-	font-size: 48px;
-	line-height: 68px;
+	font-size: 30px;
+	line-height: 140%;
 	text-transform: uppercase;
 	color: #000000;
 	margin-bottom: 40px;
@@ -303,7 +303,8 @@
 
 .size {
 	position: absolute;
-	top: 40px;
+	width: 75px;
+	top: 60px;
 	left: 50%;
 	transform: translateX(-50%) rotate(90deg);
 	font-family: Arial;
