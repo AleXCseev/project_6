@@ -341,7 +341,6 @@
 		right: -370px;
 		width: 400px;
 	}
-	
 	.header__boot2-img {
 		position: absolute;
 		top: 150px;
@@ -446,16 +445,16 @@
 		background-size: cover;
 	}
 	.card__boot {
-		width: 85%;
+		width: 80%;
 		bottom: 60px;
 	}
 	.card__boot[src="./img/card1-black.png"] {
-		width: 120%;
-		bottom: 0px;
+		width: 115%;
+		bottom: 20px;
 	}
 	.card__boot[src="./img/card2-black.png"] {
-		width: 120%;
-		bottom: 0px;
+		width: 115%;
+		bottom: 20px;
 	}
 	.site__footer {
 		width: 100%;
@@ -498,7 +497,7 @@
 	}
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
 	.container {
 		width: 800px;
 	}
@@ -838,8 +837,11 @@
 		top: 0;
 		left: 0;
 		width: 160px;
+		height: 100%;
 		padding: 12px 0px 12px 20px;
 		z-index: 1;
+		font-size: 14px;
+		line-height: 130%;
 	}
 	.advantage__img {
 		position: absolute;
@@ -1149,15 +1151,33 @@
 	}
 	.card__section {
 		background: none;
-		padding-bottom: 0;
+		padding: 0;
 	}
 	.card {
 		height: 1500px;
 		flex-direction: column;
 		margin-bottom: 60px;
 	}
+	.card__table {
+		margin-bottom: 20px;
+	}
 	.card__1 {
-		// margin-top: 60px;
+		height: 1600px;
+		.card__center {
+			top: 520px;
+		}
+		.card__galary {
+			top: 940px;
+		}
+	}
+	.card__3 {
+		height: 1600px;
+		.card__center {
+			top: 520px;
+		}
+		.card__galary {
+			top: 940px;
+		}
 	}
 	.card__3 .card__boot {
 		width: 350px;
@@ -1170,21 +1190,21 @@
 		margin: auto;
 	}
 	.card__title {
-		font-size: 30px;
+		font-size: 36px;
 		line-height: 140%;
 		margin-bottom: 20px;
 	}
 	.card__2 .card__title {
-		margin-bottom: 50px;
+		margin-bottom: 20px;
 	}
 	.card__3 .card__title {
-		font-size: 26px;
+		font-size: 36px;
 		margin-bottom: 20px;
 	}
 	.card__center {
 		width: 300px;
-		height: 350px;
-		top: 480px;
+		height: 400px;
+		top: 450px;
 	}
 	.card__center:before {
 		width: 320px;
@@ -1230,6 +1250,21 @@
 		margin-top: 0px;
 		position: relative;
 	}
+	.review__section {
+		height: auto;
+	}
+	.reviews__wrapper {
+		width: 400px;
+		height: 500px;
+	}
+	.review__autor {
+		margin-left: 20px;
+	}
+	.review__message {
+		width: 390px;
+		height: 380px;
+		background-size: 380px;
+	}
 	.footer__content {
 		width: 100%;
 		margin: 0;
@@ -1237,6 +1272,10 @@
 		margin-bottom: 150px;
 		justify-content: center;
 		align-items: center;
+		.sale__text {
+			color: #fff;
+			opacity: 1;
+		}
 	}
 	.footer__girl {
 		display: none;
@@ -1563,18 +1602,18 @@
 		right: 40px;
 	}
 	.galary__wrapper {
-		width: 262px;
-		height: 410px;
+		width: 340px;
+		height: 540px;
 	}
 	.galary__item {
-		width: 262px;
-		height: 375px;
+		width: 340px;
+		height: 510px;
 		.galary__foto {
 			position: absolute;
 			top: 50%;
 			left: 50%;
 			width: auto;
-			height: 375px;
+			height: 510px;
 			transform: translate(-50%, -50%);
 		}
 	}
@@ -1604,6 +1643,22 @@
 		margin-top: 0px;
 		position: relative;
 	}
+	.review__section {
+		margin-bottom: 50px;
+	}
+	.reviews__wrapper {
+		width: 360px;
+		height: 470px;
+	}
+	.review__autor {
+		margin-left: 20px;
+		margin-bottom: 5px;
+	}
+	.review__message {
+		width: 340px;
+		height: 370px;
+		background-size: 350px;
+	}
 }
 
 @media (max-width: 375px) {
@@ -1630,8 +1685,62 @@
 		left: auto;
 		right: 20px;
 	}
+	.galary__wrapper {
+		width: 290px;
+		height: 500px;
+	}
+	.galary__item {
+		width: 290px;
+		height: 450px;
+		.galary__foto {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: auto;
+			height: 450px;
+			transform: translate(-50%, -50%);
+		}
+	}
+	.reviews__wrapper {
+		width: 290px;
+		height: 430px;
+	}
+	.review__autor {
+		margin-left: 20px;
+		margin-bottom: 5px;
+	}
+	.review__message {
+		width: 280px;
+		height: 320px;
+		background-size: 290px;
+	}
 }
 
 @media (max-width: 360px) {
-
+	.galary__wrapper {
+		width: 270px;
+		height: 440px;
+	}
+	.galary__item {
+		width: 270px;
+		height: 410px;
+		.galary__foto {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: auto;
+			height: 410px;
+			transform: translate(-50%, -50%);
+		}
+	}
+	.card {
+		.card__center {
+			height: 380px;
+		}
+	}
+	.card__2 {
+		.card__center {
+			height: 360px;
+		}
+	}
 }
